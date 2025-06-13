@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookCover Pro - Professional Book Covering Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-book"></i> BookCover Pro
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Tired of covering books?<br><span class="highlight">We've got you covered!</span></h1>
+                    <p class="hero-subtitle">Professional book covering services for busy parents. Durable, neat, and delivered to your doorstep!</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('pricing')">
+                            <i class="fas fa-calendar-alt"></i> Book Now
+                        </button>
+                        <button class="btn btn-emergency" onclick="openWhatsApp()">
+                            <i class="fas fa-bolt"></i> Emergency Service
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                            <i class="fas fa-phone"></i> Contact Us
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="book-stack">
+                        <div class="book book-1"></div>
+                        <div class="book book-2"></div>
+                        <div class="book book-3"></div>
+                        <div class="book book-4"></div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-icon icon-1"><i class="fas fa-star"></i></div>
+                        <div class="floating-icon icon-2"><i class="fas fa-heart"></i></div>
+                        <div class="floating-icon icon-3"><i class="fas fa-check"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our Service</h2>
+                <p>Helping busy parents with professional book covering solutions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Why Choose BookCover Pro?</h3>
+                    <p>We understand how time-consuming and tedious book covering can be for busy parents. Our professional service takes this burden off your shoulders, ensuring your child's books are perfectly covered with high-quality materials.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Durable Protection</h4>
+                                <p>Premium covering materials that last the entire school year</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Time-Saving</h4>
+                                <p>Save hours of your valuable time for what matters most</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <h4>Pickup & Delivery</h4>
+                                <p>Convenient door-to-door service in your local area</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Professional Finish</h4>
+                                <p>Neat, clean, and professionally labeled covers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-books"></i>
+                        <p>Happy children with neatly covered books</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple & Transparent Pricing</h2>
+                <p>No hidden costs, just fair pricing for quality service</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Regular Service</h3>
+                        <div class="price">₹25<span>/book</span></div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium covering material</li>
+                            <li><i class="fas fa-check"></i> Professional labeling</li>
+                            <li><i class="fas fa-check"></i> 48-hour delivery</li>
+                            <li><i class="fas fa-check"></i> Free pickup</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openWhatsApp()">Choose Plan</button>
+                    </div>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Bulk Package</h3>
+                        <div class="price">₹20<span>/book</span></div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 10+ books discount</li>
+                            <li><i class="fas fa-check"></i> Premium covering material</li>
+                            <li><i class="fas fa-check"></i> Professional labeling</li>
+                            <li><i class="fas fa-check"></i> 24-hour delivery</li>
+                            <li><i class="fas fa-check"></i> Free pickup & delivery</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="openWhatsApp()">Choose Plan</button>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Emergency Service</h3>
+                        <div class="price">₹40<span>/book</span></div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Same-day service</li>
+                            <li><i class="fas fa-check"></i> Premium covering material</li>
+                            <li><i class="fas fa-check"></i> Professional labeling</li>
+                            <li><i class="fas fa-check"></i> Rush delivery</li>
+                            <li><i class="fas fa-check"></i> Priority handling</li>
+                        </ul>
+                        <button class="btn btn-emergency" onclick="openWhatsApp()">Emergency Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> Minimum order: 5 books. Special rates available for schools and bulk orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple 3-step process to get your books covered professionally</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Schedule Pickup</h3>
+                    <p>Call us or WhatsApp to schedule a convenient pickup time. We'll collect your books from your doorstep.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>We Cover</h3>
+                    <p>Our experts professionally cover your books with high-quality materials and proper labeling.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Get It Delivered</h3>
+                    <p>Receive your perfectly covered books delivered back to your home within the promised timeframe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Parents Say</h2>
+                <p>Real reviews from satisfied customers</p>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Absolutely fantastic service! Saved me hours of work and the books look perfect. My daughter loves how neat they are."</p>
+                    <div class="author">
+                        <strong>Elizabeth</strong>
+                        <span>Mother of Blessy</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Emergency service was a lifesaver! Got all 15 books covered in one day when school suddenly announced the requirement."</p>
+                    <div class="author">
+                        <strong>Paul</strong>
+                        <span>Father of Eli</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Professional quality and reasonable prices. The pickup and delivery service is so convenient. Highly recommended!"</p>
+                    <div class="author">
+                        <strong>Peter</strong>
+                        <span>Father of Catherine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to get your books covered? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                            <button class="btn btn-outline" onclick="makeCall()">Call Now</button>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+91 98765 43210</p>
+                            <button class="btn btn-primary" onclick="openWhatsApp()">Chat Now</button>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Service Area</h4>
+                            <p>Hyderabad & Surrounding Areas</p>
+                            <p>Free pickup & delivery within 10km</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Quick Quote Request</h3>
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Number of Books" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Service Type</option>
+                                <option value="regular">Regular Service (48hrs)</option>
+                                <option value="bulk">Bulk Package (24hrs)</option>
+                                <option value="emergency">Emergency Service (Same day)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Get Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-book"></i> BookCover Pro
+                    </div>
+                    <p>Professional book covering services for school students. Making education neat and organized!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Regular Book Covering</li>
+                        <li>Bulk Packages</li>
+                        <li>Emergency Service</li>
+                        <li>School Partnerships</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp Available</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Hyderabad & Surrounding Areas</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookCover Pro. All rights reserved. | Hyderabad & Surrounding Areas</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
