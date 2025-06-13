@@ -42,6 +42,6 @@ This site includes a rich set of JavaScript features:
 Clone and open the website locally:
 
 ```bash
-git clone https://github.com/Prabhas1523-m/BookCoverPro-WEB-Application.git
+git clone https://github.com/Prabhas1523-m/BookCoverPro-WebAPP.git
 cd BookCoverPro-WEB-Application
 open index.html  # or double click the file in File Explorer
